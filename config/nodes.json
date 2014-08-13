@@ -1,0 +1,40 @@
+{
+	"nodes": {
+		"web01": {
+			":node": "WebServer-01",
+			":ip": "192.168.33.21",
+			":host": "web01",
+			"ports": [
+				{
+					":host": 2201,
+					":guest": 22,
+					":id": "ssh"
+				},
+				{
+					":host": 8000,
+					":guest": 8000,
+					":id": "wls-listen"
+				}
+			],
+			":memory": 2048
+		},
+		"db01": {
+			":node": "DatabaseServer-01",
+			":ip": "192.168.33.31",
+			":host": "db01",
+			"ports": [
+				{
+					":host": 2202,
+					":guest": 22,
+					":id": "ssh"
+				},
+				{
+					":host": 8380,
+					":guest": 3306,
+					":id": "xe-listen"
+				}
+			],
+			":memory": 2048
+		}
+	}
+}

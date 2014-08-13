@@ -1,0 +1,10 @@
+{
+  "nginx": {
+    "version": "1.7.4",
+    "source": {
+          }
+  },
+  "run_list": [
+    "recipe[nginx::source]"
+  ]
+}

@@ -1,0 +1,1 @@
+{"license":"Apache 2.0","tarball_file_size":31975,"version":"2.7.4","average_rating":null,"cookbook":"https://supermarket.getchef.com/api/v1/cookbooks/nginx","file":"https://supermarket.getchef.com/api/v1/cookbooks/nginx/versions/2.7.4/download","dependencies":{"apt":"~> 2.2","bluepill":"~> 2.3","build-essential":"~> 2.0","ohai":"~> 2.0","runit":"~> 1.2","yum-epel":"~> 0.3"}}
