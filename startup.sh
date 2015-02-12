@@ -6,7 +6,8 @@ echo '**Updating Packages**'
 apt-get update
 
 echo '**Installing Ruby'
-apt-get install ruby gem rubygems build-essential ruby-dev
+apt-get install ruby-full gem rubygems build-essential ruby-dev
+which ruby2.1
 gem update
 
 
