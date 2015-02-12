@@ -1,3 +1,5 @@
+//Take a look http://docs.chef.io/roles.html
+
 {
     "name": "db",
     "description": "A simple db server",

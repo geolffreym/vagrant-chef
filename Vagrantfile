@@ -43,8 +43,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         #Control by roles
         chef.roles_path = "roles"
 
-        #
+        #Need environments?
         #chef.environments_path = "environments"
+
+        #Need databags?
         #chef.data_bags_path = "data_bags"
         chef.provisioning_path = "/tmp/vagrant-chef"
 
