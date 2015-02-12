@@ -29,9 +29,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       config.vm.hostname = node_values[':node']
       config.vm.network :private_network, ip: node_values[':ip']
 
-      # syncs local repository of large third-party installer files (quicker than downloading each time)
-      #config.vm.synced_folder "#{ENV['HOME']}/Documents/git_repos/chef-artifacts", "/vagrant"
-
       config.vm.provider :virtualbox do |vb|
         vb.customize ["modifyvm", :id, "--memory", node_values[':memory']]
         vb.customize ["modifyvm", :id, "--name", node_values[':node']]
