@@ -36,7 +36,7 @@ Create the nodes list in /config/nodes.json
 }
 ```
 
-COnfig your nodes
+Config your nodes
 ```ruby
 {
     "run_list": [
