@@ -51,7 +51,7 @@ Configure Chef and create your roles
 
 [Configure knife init](https://docs.chef.io/knife_configure.html)
 
-[Read about it](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-environments-in-chef-to-control-server-configurations)
+[Read how](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-environments-in-chef-to-control-server-configurations)
 
 ```ruby
 knife configure initial
