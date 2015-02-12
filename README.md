@@ -43,15 +43,12 @@ Create the nodes list in /config/nodes.json
 }
 ```
 
-Config your nodes
+Create your roles
 ```ruby
-{
-    "run_list": [
-        "recipe[chef-client::default]",
-        "recipe[mysql::server]"
-    ]
-}
+knife role create myrole
 ```
+
+[Read about it](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-environments-in-chef-to-control-server-configurations)
 
 
 Up your boxes
