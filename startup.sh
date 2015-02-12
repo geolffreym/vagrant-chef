@@ -5,17 +5,20 @@ echo '**Updating Packages**'
 
 apt-get update
 
-echo 'Installing Ruby'
+echo '**Installing Ruby'
 apt-get install ruby gem rubygems build-essential ruby-dev
 gem update
 
 
 echo '**Installing Vagrant'
 
-mkdir /src
+if [ ! -d /src ]; then
+    mkdir /src
+fi
+
 cd /src
-wget -q https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.3_x86_64.deb
-dpkg -i vagrant_1.6.3_x86_64.deb
+wget -q https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_64.deb
+dpkg -i vagrant_1.7.2_x86_64.deb
 
 
 echo '**Creating directories**'
