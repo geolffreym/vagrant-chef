@@ -56,7 +56,7 @@ knife role create myrole
 [Read about it](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-environments-in-chef-to-control-server-configurations)
 
 
-Give life to the roles in nodes/ create your own nodes
+**Give life to the roles in nodes/ create your own nodes**
 
 Example we01.json
 
