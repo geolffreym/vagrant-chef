@@ -6,7 +6,7 @@ echo '**Updating Packages**'
 apt-get update
 
 echo '**Installing Ruby'
-apt-get install ruby-full gem rubygems build-essential ruby-dev
+apt-get install ruby2.1 gem rubygems build-essential ruby-dev libsqlite3-dev
 which ruby2.1
 gem update
 
@@ -30,7 +30,6 @@ vagrant init
 
 echo '**Installing Chef**'
 
-gem install knife-solo
 gem install librarian-chef
 
 echo '**Getting Cookbooks**'
