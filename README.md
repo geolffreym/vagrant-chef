@@ -16,7 +16,7 @@ Create your Cheffile and append your cookbooks then
 librarian-chef install
 ```
 
-View the Chef Community cookbooks resources or [create it] (https://learn.chef.io/legacy/tutorials/create-your-first-cookbook/)
+View the Chef Community cookbooks resources or [create it] (https://docs.chef.io/knife_cookbook.html)
 
 
 
