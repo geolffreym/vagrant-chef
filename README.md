@@ -43,11 +43,12 @@ Create the nodes list in /config/nodes.json
 }
 ```
 
-Create your roles
+Configure Chef and create your roles
 ```ruby
+knife configure initial
 knife role create myrole
 ```
-
+[Configure init](https://docs.chef.io/knife_configure.html)
 [Read about it](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-environments-in-chef-to-control-server-configurations)
 
 

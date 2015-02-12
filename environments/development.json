@@ -1,0 +1,12 @@
+{
+    "name": "development",
+    "description": "The master development branch",
+    "cookbook_versions": {
+    },
+    "json_class": "Cheff:Environment",
+    "chef_type": "environment",
+    "default_attributes": {
+    },
+    "override_attributes": {
+    }
+}
