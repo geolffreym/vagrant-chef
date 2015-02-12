@@ -1,5 +1,6 @@
 {
     "run_list": [
+        "recipe[chef-client::default]",
         "recipe[mysql::server]"
     ]
 }
