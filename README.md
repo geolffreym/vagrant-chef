@@ -9,8 +9,16 @@ startup.sh
 Run to execute cookbook dependency manager 
 ```ruby
 librarian-chef init
+```
+
+Create your Cheffile and append your cookbooks then
+```ruby
 librarian-chef install
 ```
+
+View the Chef Community cookbooks resources or create it [https://learn.chef.io/legacy/tutorials/create-your-first-cookbook/]
+
+
 
 Create the nodes list in /config/nodes.json
 ```ruby
@@ -52,7 +60,7 @@ Up your boxes
 vagrant up
 ```
 
-Lirarian-Chef plugin
+Librarian-Chef plugin
 https://github.com/applicationsonline/librarian-chef
 
 Vagrant

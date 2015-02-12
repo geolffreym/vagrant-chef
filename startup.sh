@@ -33,6 +33,7 @@ vagrant init
 
 echo '**Installing Chef**'
 
+gem install knife-solo
 gem install librarian-chef
 
 echo '**Getting Cookbooks**'
