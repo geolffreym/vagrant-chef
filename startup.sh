@@ -22,6 +22,7 @@ fi
 cd /src
 wget -q https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.2_x86_64.deb
 dpkg -i vagrant_1.7.2_x86_64.deb
+vagrant plugin install vagrant-omnibus
 
 
 echo '**Creating directories**'

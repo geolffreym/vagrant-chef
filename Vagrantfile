@@ -37,6 +37,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       VAGRANT_JSON = JSON.parse(Pathname(__FILE__).dirname.join('nodes', node_name + '.json').read)
 
       config.vm.provision :chef_solo do |chef|
+        chef.node_name = node_name
         chef.cookbooks_path = "cookbooks"
         chef.roles_path = "roles"
         chef.data_bags_path = "data_bags"
