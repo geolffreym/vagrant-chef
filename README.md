@@ -42,6 +42,8 @@ Up your boxes
 vagrant up
 ```
 
+Lirarian-Chef plugin
+https://github.com/applicationsonline/librarian-chef
 
 Vagrant
 https://www.vagrantup.com/
