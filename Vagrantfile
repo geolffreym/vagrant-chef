@@ -28,6 +28,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       config.vm.hostname = node_values[':node']
       config.vm.network :private_network, ip:node_values[':ip']
+      config.omnibus.chef_version = :latest
 
       config.vm.provider :virtualbox do |vb|
         vb.customize ["modifyvm", :id, "--memory", node_values[':memory']]
