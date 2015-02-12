@@ -19,7 +19,6 @@ librarian-chef install
 View the Chef Community cookbooks resources or [create it] (https://docs.chef.io/knife_cookbook.html)
 
 
-
 Create the nodes list in /config/nodes.json
 ```ruby
 "nodes": {
