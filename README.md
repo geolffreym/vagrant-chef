@@ -48,9 +48,21 @@ Configure Chef and create your roles
 knife configure initial
 knife role create myrole
 ```
-[Configure init](https://docs.chef.io/knife_configure.html)
+[Configure knife init](https://docs.chef.io/knife_configure.html)
 [Read about it](https://www.digitalocean.com/community/tutorials/how-to-use-roles-and-environments-in-chef-to-control-server-configurations)
 
+
+Give life to the roles in nodes/ create your own nodes
+
+Example we01.json
+
+```ruby
+{
+    "run_list": [
+        "role[web]"
+    ]
+}
+```
 
 Up your boxes
 ```ruby
