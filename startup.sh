@@ -6,7 +6,7 @@ echo '**Updating Packages**'
 apt-get update
 
 echo '**Installing Ruby'
-apt-get install ruby2.1 gem rubygems build-essential ruby-dev libsqlite3-dev
+apt-get install ruby2.1 gem rubygems build-essential virtualbox ruby-dev libsqlite3-dev
 which ruby2.1
 gem update
 

@@ -21,13 +21,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       ports = node_values['ports']
       ports.each do |port|
         config.vm.network :forwarded_port,
-                          host :port[':host'],
-                               guest :port[':guest'],
-                                     id :port[':id']
+                          host:port[':host'],
+                          guest:port[':guest'],
+                          id:port[':id']
       end
 
       config.vm.hostname = node_values[':node']
-      config.vm.network :private_network, ip :node_values[':ip']
+      config.vm.network :private_network, ip:node_values[':ip']
 
       config.vm.provider :virtualbox do |vb|
         vb.customize ["modifyvm", :id, "--memory", node_values[':memory']]
