@@ -1,5 +1,4 @@
 {
-    "mysql": [],
     "run_list": [
         "recipe[mysql::server]"
     ]
