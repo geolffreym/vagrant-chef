@@ -12,7 +12,7 @@ librarian-chef init
 librarian-chef install
 ```
 
-Config your nodes in /config/nodes.json
+Create the nodes list in /config/nodes.json
 ```ruby
 "nodes": {
 		"web01": {
@@ -36,12 +36,24 @@ Config your nodes in /config/nodes.json
 }
 ```
 
+COnfig your nodes
+```ruby
+{
+    "run_list": [
+        "recipe[chef-client::default]",
+        "recipe[mysql::server]"
+    ]
+}
+```
+
 
 Up your boxes
 ```ruby
 vagrant up
 ```
 
+Lirarian-Chef plugin
+https://github.com/applicationsonline/librarian-chef
 
 Vagrant
 https://www.vagrantup.com/
