@@ -1,6 +1,6 @@
 {
-    "name": "web",
-    "description": "A simple web server",
+    "name": "db",
+    "description": "A simple db server",
     "json_class": "Chef::Role",
     "default_attributes": {
 
@@ -11,7 +11,7 @@
     "chef_type": "role",
     "run_list": [
         "recipe[chef-client::default]",
-        "recipe[nginx::default]"
+        "recipe[mysql::server]"
     ],
     "env_run_lists": {
 

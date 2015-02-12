@@ -35,7 +35,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.customize ["modifyvm", :id, "--name", node_values[':node']]
       end
 
-      #VAGRANT_JSON = JSON.parse(Pathname(__FILE__).dirname.join('nodes', node_name + '.json').read)
+      VAGRANT_JSON = JSON.parse(Pathname(__FILE__).dirname.join('nodes', node_name + '.json').read)
 
       config.vm.provision :chef_solo do |chef|
         chef.cookbooks_path = "cookbooks"
@@ -48,8 +48,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         #chef.data_bags_path = "data_bags"
         chef.provisioning_path = "/tmp/vagrant-chef"
 
-        #chef.run_list = VAGRANT_JSON.delete('run_list')
-        #chef.json = VAGRANT_JSON
+        chef.run_list = VAGRANT_JSON.delete('run_list') if VAGRANT_JSON['run_list']
+        chef.json = VAGRANT_JSON
       end
     end
   end

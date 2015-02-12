@@ -5,6 +5,7 @@ site 'https://supermarket.getchef.com/api/v1'
 
 cookbook 'mysql', '~> 6.0.13'
 cookbook 'chef-client'
+cookbook 'nginx', '~> 2.7.4'
 
 # cookbook 'apache2', '>= 1.0.0'
 
