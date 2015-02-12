@@ -19,6 +19,8 @@ librarian-chef install
 View the Chef Community cookbooks resources or [create it] (https://docs.chef.io/knife_cookbook.html)
 
 
+Nodes
+-----
 Create the nodes list in /config/nodes.json
 ```ruby
 "nodes": {
@@ -43,6 +45,8 @@ Create the nodes list in /config/nodes.json
 }
 ```
 
+Roles
+-----
 Configure Chef and create your roles
 ```ruby
 knife configure initial
@@ -64,10 +68,17 @@ Example we01.json
 }
 ```
 
+At Work
+-------
+
 Up your boxes
 ```ruby
 vagrant up
 ```
+
+
+Help links
+---------
 
 Librarian-Chef plugin
 https://github.com/applicationsonline/librarian-chef
