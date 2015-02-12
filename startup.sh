@@ -6,7 +6,9 @@ echo '**Updating Packages**'
 apt-get update
 
 echo '**Installing Ruby'
-apt-get install ruby2.1 gem rubygems build-essential virtualbox ruby-dev libsqlite3-dev
+echo "deb http://apt.opscode.com/ `lsb_release -cs`-0.10 main" | tee /etc/apt/sources.list.d/opscode.list
+
+apt-get install ruby2.1 gem rubygems build-essential chef chef-server virtualbox-4.2 ruby-dev libsqlite3-dev
 which ruby2.1
 gem update
 

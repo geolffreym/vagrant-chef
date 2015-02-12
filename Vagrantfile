@@ -9,7 +9,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "vagrant-oracle-vm-saucy64"
+  config.vm.box = "wheezy64"
   config.vm.box_url = "http://downloads.shadoware.org/wheezy64.box"
 
   nodes_config.each do |node|
