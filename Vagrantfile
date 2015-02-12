@@ -1,5 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
+# Geolffrey Mena <gmjun2000@gmail.com>
 
 
 nodes_config = JSON.parse(Pathname(__FILE__).dirname.join('config', 'nodes.json').read)['nodes']

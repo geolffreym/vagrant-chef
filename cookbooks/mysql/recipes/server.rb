@@ -1,32 +1,23 @@
 #
 # Cookbook Name:: mysql
-# Recipe:: server
+# Recipe:: default
 #
-# Copyright 2008-2013, Chef Software, Inc.
+# Copyright 2014, YOUR_COMPANY_NAME
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# All rights reserved - Do Not Redistribute
 #
 
-mysql_service 'default' do
-  version '5.1'
-  port '3307'
-  data_dir '/data'
-  template_source '5.1.erb'
-  allow_remote_root true
-  root_network_acl ['10.9.8.7/6', '1.2.3.4/5']
-  remove_anonymous_users false
-  remove_test_database false
-  server_root_password 'decrypt_me_from_a_databag_maybe'
-  server_repl_password 'sync_me_baby_one_more_time'
-  action :create
+@version = '5.5'
+
+execute "apt-get update" do
+  command "apt-get update"
+end
+
+package 'mysql-server' do
+  action :install
+  version "5.5*"
+end
+
+service 'mysql' do
+  action [ :enable, :start ]
 end
