@@ -9,8 +9,8 @@ VAGRANTFILE_API_VERSION = "2"
 
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "vagrant-debian-wheezy64"
-  config.vm.box_url = "https://dl.dropboxusercontent.com/s/xymcvez85i29lym/vagrant-debian-wheezy64.box"
+  config.vm.box = "wheezy64-debian"
+  config.vm.box_url = "http://downloads.shadoware.org/wheezy64.box"
 
   nodes_config.each do |node|
     node_name = node[0] # name of node
