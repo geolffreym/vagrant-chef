@@ -10,7 +10,6 @@
     },
     "chef_type": "role",
     "run_list": [
-        "recipe[chef-client::default]",
         "recipe[nginx::default]"
     ],
     "env_run_lists": {
