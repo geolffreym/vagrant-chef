@@ -43,7 +43,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         chef.install = false
         #Control by roles
         chef.roles_path = "roles"
-        chef.synced_folder_type = "/vagrant"
+        chef.synced_folder_type = :virtualbox
 
         #Need environments?
         #chef.environments_path = "environments"
