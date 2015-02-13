@@ -9,8 +9,8 @@ VAGRANTFILE_API_VERSION = "2"
 
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "wheezy64"
-  config.vm.box_url = "http://downloads.shadoware.org/wheezy64.box"
+  config.vm.box = "vagrant-debian-wheezy64"
+  config.vm.box_url = "https://dl.dropboxusercontent.com/s/xymcvez85i29lym/vagrant-debian-wheezy64.box"
 
   nodes_config.each do |node|
     node_name = node[0] # name of node
@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       config.vm.hostname = node_values[':node']
       config.vm.network :private_network, ip:node_values[':ip']
-      config.omnibus.chef_version = :latest
+      #config.omnibus.chef_version = :latest
 
       config.vm.provider :virtualbox do |vb|
         vb.customize ["modifyvm", :id, "--memory", node_values[':memory']]
@@ -40,7 +40,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       config.vm.provision :chef_solo do |chef|
         chef.cookbooks_path = "cookbooks"
-
+        chef.install = false
         #Control by roles
         chef.roles_path = "roles"
         chef.synced_folder_type = "/vagrant"
