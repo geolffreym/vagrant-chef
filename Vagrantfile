@@ -23,7 +23,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         config.vm.network :forwarded_port,
                           host:port[':host'],
                           guest:port[':guest'],
-                          id:port[':id']
+                          id:port[':id'],
+                          auto_correct:true
       end
 
       config.vm.hostname = node_values[':node']

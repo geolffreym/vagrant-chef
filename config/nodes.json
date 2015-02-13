@@ -11,8 +11,8 @@
 					":id": "ssh"
 				},
 				{
-					":host": 8000,
-					":guest": 8000,
+					":host": 9000,
+					":guest": 80,
 					":id": "wls-listen"
 				}
 			],
