@@ -11,7 +11,7 @@ Run to execute cookbook dependency manager
 librarian-chef init
 ```
 
-Create your Cheffile and append your cookbooks then
+Append your cookbooks to Cheffile then
 ```ruby
 librarian-chef install
 ```
