@@ -61,7 +61,7 @@ knife role create myrole
 
 **Give life to the roles in nodes/ create your own nodes**
 
-Example we01.json
+Example web01.json
 
 ```ruby
 {
